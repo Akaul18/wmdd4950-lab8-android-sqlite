@@ -39,7 +39,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.ViewHo
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
        holder.textView.setText(operators.get(position));
 
-//        Log.d(TAG, "url: "+url.get(0));
+//        Log.d(TAG, "url: "+urls.get(position));
 
         holder.textView.setOnClickListener(v -> {
 

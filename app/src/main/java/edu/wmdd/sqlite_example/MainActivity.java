@@ -81,7 +81,6 @@ public class MainActivity extends AppCompatActivity {
                 while (cursor1.moveToNext()) {
                     String operator = cursor1.getString(0);
                     String url = cursor1.getString(1);
-//                    String url = cursor1.getString(cursor1.getColumnIndex("businessURL"));
                     operators.add(operator);
                     urls.add(url);
                     Log.d(TAG, operator+url);
@@ -99,8 +98,6 @@ public class MainActivity extends AppCompatActivity {
                 rv.setAdapter(recyclerAdapter);
                 rv.addItemDecoration (new DividerItemDecoration(MainActivity.this, DividerItemDecoration.VERTICAL));
 
-//                TextView textView = findViewById(R.id.textView);
-//                textView.setText(operators.stream().reduce("", (s, s2) -> s + "\n" + s2));
             }
 
             @Override
